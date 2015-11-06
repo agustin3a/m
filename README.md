@@ -1,4 +1,4 @@
-M
+![M](https://github.com/agustin3a/m/blob/master/logo.png)
 =========
 
 Web app monitor.
@@ -10,7 +10,13 @@ Web app monitor.
 ```
 ## Configuring
 
-For configuring create a file in root app folder with the name [m.json](https://github.com/agustin3a/m/blob/master/m.json) 
+For configuring create a file in root app folder with the name [m.json](https://github.com/agustin3a/m/blob/master/m.json).  
+The file have a list of variables for configuring:
++ __name__: Name of your application
++ __target__: IP of the pc running the m client app
++ __port__: Listener port number of pc running the m client app
++ __app_port__: Listener port number  of your application
++ __proxy_port__: Port number for proxy
 
 ## Usage
 
