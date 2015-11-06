@@ -5,11 +5,16 @@ Web app monitor.
 
 ## Installation
 
-  npm install m --save
+```sh
+  $ npm install git://github.com/agustin3a/m.git --save
+```
 
 ## Usage
 
-  In your main file
+  Add at the begining of your app main file:
+```javascript
+	require('m');
+```
 
 ## Release History
 

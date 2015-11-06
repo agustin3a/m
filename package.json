@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/agustin3a/m/issues"
   },
-  "homepage": "https://github.com/agustin3a/m#readme"
+  "homepage": "https://github.com/agustin3a/m#readme",
+  "dependencies": {
+    "http-proxy": "^1.12.0"
+  }
 }

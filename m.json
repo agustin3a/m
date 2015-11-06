@@ -1,0 +1,7 @@
+{
+	"name" : "m",
+	"target" : "localhost", 
+	"port" : "4000",
+	"app_port" : "1337",
+	"proxy_port" : "1338"
+}
