@@ -31,10 +31,10 @@ start = function() {
 	  		load = cpu.percentageCPU(startMeasure,endMeasure);
 	  		startMeasure = endMeasure;
 				mem = process.memoryUsage().rss;
-				message = new Buffer('{ "app": "' + NAME + '", "type":"cpu-status", load": "' + load + '", "mem": "' + mem + '"}');
+				message = new Buffer('{ "app": "' + NAME + '", "type":"cpu-status", "load": "' + load + '", "mem": "' + mem + '"}');
 			}
 		});
-	}, 5000);
+	}, 30000);
 }
 start();
 
@@ -42,7 +42,7 @@ start();
 var proxy = httpProxy.createProxyServer({});
 var target = 'http://127.0.0.1:' + APP_PORT;
 var server = http.createServer(function(req, res) {
-	message = new Buffer('{ "app": "' + NAME + ', "type" : "req" , "url": "' + req.url + '"}');
+	message = new Buffer('{ "app": "' + NAME + '", "type" : "req" , "url": "' + req.url + '"}');
 	client.send(message, 0, message.length, PORT, TARGET);
   proxy.web(req, res, { target: target });
 });
