@@ -34,7 +34,7 @@ start = function() {
 				message = new Buffer('{ "app": "' + NAME + '", "type":"cpu-status", "load": "' + load + '", "mem": "' + mem + '"}');
 			}
 		});
-	}, 30000);
+	}, 10000);
 }
 start();
 
